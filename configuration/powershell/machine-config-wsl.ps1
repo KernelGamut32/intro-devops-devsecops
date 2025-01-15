@@ -1,6 +1,6 @@
 # Execute from the D:\ home drive
 
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process -Force
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Invoke-WebRequest -Uri https://aka.ms/wslubuntu2204 -OutFile D:\Ubuntu.appx -UseBasicParsing
