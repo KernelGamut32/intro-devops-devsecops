@@ -1,6 +1,7 @@
-# Execute from the D:\ home drive
-
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+# Execute from PowerShell as Run as Administrator.
+# This script will install WSL2 and Ubuntu 22.04 LTS. Before running this script, 
+# execute 'Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force' in the PowerShell 
+# instance to allow this script to run.
 
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Invoke-WebRequest -Uri https://aka.ms/wslubuntu2204 -OutFile D:\Ubuntu.appx -UseBasicParsing
